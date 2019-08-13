@@ -52,6 +52,15 @@ The EmailService has been register as recevier for a particular queue and alert 
 Refer the EmailService repositary
 
 
+
+
+Services Port
+Edureka Naming server - 8761
+to-do-list - 8081,8082
+Email-Service - 8183,8184
+
+
+
 MYSQL Database is used as a data source. 
 
 The connection string details are,
