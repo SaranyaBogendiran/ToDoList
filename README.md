@@ -52,9 +52,14 @@ The EmailService has been register as recevier for a particular queue and alert 
 Refer the EmailService repositary
 
 
-MYSQL Database is used as a data source. The connection string details are,
+MYSQL Database is used as a data source. 
+
+The connection string details are,
+
 spring.datasource.url = jdbc:mysql://localhost:3306/todolist
+
 spring.datasource.username = username
+
 spring.datasource.password = password
 
 
