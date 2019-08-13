@@ -54,11 +54,6 @@ Refer the EmailService repositary
 
 
 
-Services Port
-Edureka Naming server - 8761
-to-do-list - 8081,8082
-Email-Service - 8183,8184
-
 
 
 MYSQL Database is used as a data source. 
@@ -70,6 +65,11 @@ spring.datasource.url = jdbc:mysql://localhost:3306/todolist
 spring.datasource.username = username
 
 spring.datasource.password = password
+
+Services Port
+Edureka Naming server - 8761
+to-do-list - 8081,8082
+Email-Service - 8183,8184
 
 
 
