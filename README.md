@@ -67,9 +67,16 @@ spring.datasource.username = username
 spring.datasource.password = password
 
 Services Port
+
 Edureka Naming server - 8761
+
 to-do-list - 8081,8082
+
+to-do-list-proxy - 8000
+
 Email-Service - 8183,8184
+
+
 
 
 
