@@ -68,13 +68,19 @@ spring.datasource.password = password
 
 Services Port
 
-Edureka Naming server - 8761
+Application name	     Port No
 
-to-do-list - 8081,8082
+Edureka Naming server	
 
-to-do-list-proxy - 8000
+Zipkin	
 
-Email-Service - 8183,8184
+Zuul	
+
+MYSQL	
+
+Cloud Config	
+
+Hystrix	
 
 
 
