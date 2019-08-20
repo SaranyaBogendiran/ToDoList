@@ -71,15 +71,10 @@ spring.datasource.password = password
 | Application name | Port No |
 | ----------------- | --------|
 | Edureka Naming server |      |
-
 | Zipkin |     |
-
 | Zuul |    |
-
 | MYSQL |    |
-
 | Cloud Config |    |
-
 | Hystrix |   | 
 
 
