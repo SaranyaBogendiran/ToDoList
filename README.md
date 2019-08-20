@@ -66,11 +66,11 @@ spring.datasource.username = username
 
 spring.datasource.password = password
 
-Services Port
 
-Application name	     Port No
 
-Edureka Naming server	
+| Application name | Port No |
+| ----------------- | --------|
+| Edureka Naming server |      |
 
 Zipkin	
 
