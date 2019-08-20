@@ -70,10 +70,11 @@ spring.datasource.password = password
 
 | Application name | Port No |
 | ----------------- | --------|
-| Edureka Naming server |      |
+| netflix-eureka-naming-server |  8761 |
+| to-do-list |  8081, 8082 |
 | Zipkin |     |
-| Zuul |    |
-| MYSQL |    |
+| zuul-api-gateway | 8011 |
+| MYSQL | 3306 |
 | Cloud Config |    |
 | Hystrix |   | 
 
