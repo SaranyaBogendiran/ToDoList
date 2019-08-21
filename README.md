@@ -76,7 +76,7 @@ spring.datasource.password = password
 | Zipkin |     |
 | zuul-api-gateway | 8011 |
 | MYSQL | 3306 |
-| Cloud Config |    |
+| Cloud Config | 8888 |
 | Hystrix |   | 
 
 
