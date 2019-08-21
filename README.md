@@ -71,6 +71,7 @@ spring.datasource.password = password
 | Application name | Port No |
 | ----------------- | --------|
 | netflix-eureka-naming-server |  8761 |
+| email-service | 8183 |
 | to-do-list |  8081, 8082 |
 | Zipkin |     |
 | zuul-api-gateway | 8011 |
