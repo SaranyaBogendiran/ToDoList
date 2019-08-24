@@ -17,6 +17,7 @@ public class ToDoList {
 	private int id;
 	private String description;
 	private boolean status;
+
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JsonIgnore
@@ -30,6 +31,7 @@ public class ToDoList {
 	public String getDescription() {
 		return description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}

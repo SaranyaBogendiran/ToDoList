@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.logging.Logger;
 
 import javax.persistence.FetchType;
 import javax.sound.midi.Receiver;
@@ -12,6 +13,7 @@ import javax.validation.Valid;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -21,6 +23,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
 
 import com.saranya.microservice.todolist.ToDoListApplication;
 import com.saranya.microservice.todolist.Entity.ToDoList;
@@ -43,6 +46,10 @@ public class ToDoListController {
 	@Autowired
     private RabbitTemplate template;
 	
+	@Value("${server.port}")
+    private String port;
+
+	private static final Logger LOGGER = Logger.getLogger(ToDoListApplication.class.getName());
 	
 	//display all the user
 	@GetMapping("/users")
@@ -52,6 +59,10 @@ public class ToDoListController {
 		
 	}
 	
+	@GetMapping("/ports")
+	public String retrivePort() {
+		return port;
+	}
 	//display the user by id
 	@GetMapping("/users/{id}")
 	public Optional<User> retriveUser(@PathVariable int id) {
@@ -136,7 +147,7 @@ public class ToDoListController {
 		message.put("userName",userName);
 		message.put("statusMessage",statusMessage);
 		this.template.convertAndSend(ToDoListApplication.topicExchangeName, "foo.bar.baz", message);
-		
+		LOGGER.info("To-Do-List Status Update");
 		
 	}
 	
