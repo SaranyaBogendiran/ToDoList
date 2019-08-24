@@ -23,6 +23,7 @@ The staus change of the List Item will trigger a mail alert to the user.
 
 For which the todolist is configured as Producer in RabbitMQ.
 
+#####RabbitMQ:
 
 TO configure the RabbitMQ, follow the steps in official documentation,
 
@@ -79,7 +80,7 @@ spring.datasource.password = password
 | Cloud Config | 8888 |
 | Hystrix |   | 
 
-Zipkin Configuration:
+#####Zipkin Configuration:
 
 Logs are fed to rabbitmq and Zipkin listen on the rabbitmq queue.
 
