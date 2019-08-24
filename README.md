@@ -73,11 +73,33 @@ spring.datasource.password = password
 | netflix-eureka-naming-server |  8761 |
 | email-service | 8183 |
 | to-do-list |  8081, 8082 |
-| Zipkin |     |
+| Zipkin | 9411 |
 | zuul-api-gateway | 8011 |
 | MYSQL | 3306 |
 | Cloud Config | 8888 |
 | Hystrix |   | 
+
+Zipkin Configuration:
+
+Logs are fed to rabbitmq and Zipkin listen on the rabbitmq queue.
+
+To have the zipkin up and running, follow the below steps,
+
+1. Make sure RabbitMQ is up.
+
+2. Download the Zipkin jar fom https://zipkin.io/pages/quickstart.html
+
+3. Navigate to the Zipkin jar path in cmd promt and run, 
+
+set RABBIT_URI=amqp://localhost
+
+and then run the zipkin jar.
+
+java -jar zipkin.jar
+
+4. Zipkin can be accessed from http://localhost:9411/zipkin/
+
+
 
 
 
