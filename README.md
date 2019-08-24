@@ -25,7 +25,7 @@ For which the todolist is configured as Producer in RabbitMQ.
 
 **RabbitMQ:**
 
-TO configure the RabbitMQ, follow the steps in official documentation,
+To configure the RabbitMQ, follow the steps in official documentation,
 
 https://www.rabbitmq.com/download.html
 
@@ -99,6 +99,11 @@ and then run the zipkin jar.
 java -jar zipkin.jar
 
 4. Zipkin can be accessed from http://localhost:9411/zipkin/
+
+
+**Cloud Config Server**
+
+Check out the properties from https://github.com/SaranyaBogendiran/Cloud-config
 
 
 
